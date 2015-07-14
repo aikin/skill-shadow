@@ -1,0 +1,39 @@
+apply plugin: 'java'
+
+sourceCompatibility = JavaVersion.VERSION_1_8
+targetCompatibility = JavaVersion.VERSION_1_8
+version = '1.0'
+
+ext {
+    junitVersion = '4.11'
+    mockitoVersion = '1.9.5'
+    hamcrestVersion = '1.3'
+    log4jVersion = '1.2.17'
+    slf4jVersion = '1.7.7'
+    guiceVersion = '3.0'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile "log4j:log4j:$log4jVersion"
+    compile "org.slf4j:slf4j-api:$slf4jVersion"
+    compile "org.slf4j:jcl-over-slf4j:$slf4jVersion"
+    compile "org.slf4j:slf4j-log4j12:$slf4jVersion"
+    compile "com.google.inject:guice:$guiceVersion"
+
+    testCompile "junit:junit:$junitVersion"
+    testCompile "org.hamcrest:hamcrest-all:$hamcrestVersion"
+    testCompile "org.mockito:mockito-all:$mockitoVersion"
+}
+/*
+ * group属性指定依赖的分组（在Maven中，就是groupId）。
+ * name属性指定依赖的名称（在Maven中，就是artifactId）。
+ * version属性指定外部依赖的版本（在Maven中，就是version）。
+ *
+ * compile group: 'foo', name: 'foo', version: '0.1'  <=>
+ * compile 'foo:foo:0.1'
+ *
+ */
