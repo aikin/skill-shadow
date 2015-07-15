@@ -1,5 +1,7 @@
 package com.thoughtworks.shadow;
 
+import com.thoughtworks.shadow.util.PropertiesLoader;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -9,6 +11,7 @@ public class HelloWorld {
 
     public static void main(String[] args) {
         logger.info("Hello World!");
+        logger.info(PropertiesLoader.getProperty("log4j.rootLogger"));
     }
 
 }

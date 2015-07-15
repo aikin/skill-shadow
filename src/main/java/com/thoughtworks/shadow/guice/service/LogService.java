@@ -1,7 +1,5 @@
 package com.thoughtworks.shadow.guice.service;
 
-import com.thoughtworks.shadow.guice.service.Log;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

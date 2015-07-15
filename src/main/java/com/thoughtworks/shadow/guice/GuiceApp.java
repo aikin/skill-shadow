@@ -1,11 +1,9 @@
 package com.thoughtworks.shadow.guice;
 
 
-import com.thoughtworks.shadow.guice.ModuleConfig;
-import com.thoughtworks.shadow.guice.service.ProcessService;
-
 import com.google.inject.Guice;
 import com.google.inject.Injector;
+import com.thoughtworks.shadow.guice.service.ProcessService;
 
 public class GuiceApp {
 
