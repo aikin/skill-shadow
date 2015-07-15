@@ -5,6 +5,6 @@ public class Cat implements Animal {
 
     @Override
     public void say() {
-        System.out.printf("i am cat !");
+        System.out.printf("i am cat ! \n");
     }
 }

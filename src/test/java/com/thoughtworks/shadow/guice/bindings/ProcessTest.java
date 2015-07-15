@@ -5,7 +5,7 @@ import org.junit.Test;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.is;
 
-public class ProcessServiceTest {
+public class ProcessTest {
 
     @Test
     public void should_log_success() {
