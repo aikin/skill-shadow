@@ -7,12 +7,12 @@ import org.slf4j.LoggerFactory;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Map.Entry;
-import java.util.Objects;
 import java.util.Properties;
 import java.util.Set;
 
 public class PropertiesLoader {
 
+    // constant can not changed
     private static final Logger logger = LoggerFactory.getLogger(PropertiesLoader.class);
     private static String PROPERTIES_FILE_NAME = "log4j.properties";
 

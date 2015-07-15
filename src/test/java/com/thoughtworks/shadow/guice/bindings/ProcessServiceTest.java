@@ -1,4 +1,4 @@
-package com.thoughtworks.shadow.guice.service;
+package com.thoughtworks.shadow.guice.bindings;
 
 import org.junit.Test;
 

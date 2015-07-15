@@ -1,4 +1,4 @@
-package com.thoughtworks.shadow.guice.service;
+package com.thoughtworks.shadow.guice.bindings.linked;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
