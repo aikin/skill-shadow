@@ -11,6 +11,9 @@ ext {
     log4jVersion = '1.2.17'
     slf4jVersion = '1.7.7'
     guiceVersion = '3.0'
+    myBatisVersion = '3.2.7'
+    myBatisGuiceVersion = '3.6'
+    mySqlConnectorJava = '5.1.34'
 }
 
 repositories {
@@ -23,6 +26,9 @@ dependencies {
     compile "org.slf4j:jcl-over-slf4j:$slf4jVersion"
     compile "org.slf4j:slf4j-log4j12:$slf4jVersion"
     compile "com.google.inject:guice:$guiceVersion"
+    compile "org.mybatis:mybatis:$myBatisVersion"
+    compile "org.mybatis:mybatis-guice:$myBatisGuiceVersion"
+    compile "mysql:mysql-connector-java:$mySqlConnectorJava"
 
     testCompile "junit:junit:$junitVersion"
     testCompile "org.hamcrest:hamcrest-all:$hamcrestVersion"

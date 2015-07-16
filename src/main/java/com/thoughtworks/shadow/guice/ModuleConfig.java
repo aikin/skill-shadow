@@ -32,7 +32,7 @@ public class ModuleConfig extends AbstractModule {
     }
 
     @Provides
-     public int getAge() {
+     public int getAge() { // 和方法名无关
 
         System.out.println("run @Provides");
         return 22;
